@@ -4,8 +4,9 @@ const cors = require('cors');
 const HTTPSTATUSCODE = require('./utils/httpStatusCode');
 const {connectMongo} = require('./utils/db');
 const bookRouter = require('./src/routes/book.routes');
+require("dotenv").config();
 
-const PORT = 3000;
+const PORT = 3000; 
 
 connectMongo();
 const app = express();
